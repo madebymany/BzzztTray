@@ -1,0 +1,11 @@
+/* 
+  MoveApplication.strings
+  BzzztTray
+
+  Created by Alex Barlow on 02/05/2014.
+  Copyright (c) 2014 Alex Barlow. All rights reserved.
+*/
+
+"Move to Applications folder?" = "Move to Apps folder and Start on boot?";
+
+"I can move myself to the Applications folder if you'd like." = "I can move to the Application and start myself up whenever you restart you mac if you like?";

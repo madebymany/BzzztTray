@@ -1,25 +1,23 @@
 PODS:
-  - AFNetworking (2.2.3):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-    - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.2.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.2.3):
-    - AFNetworking/NSURLConnection
-  - AFNetworking/Reachability (2.2.3)
-  - AFNetworking/Security (2.2.3)
-  - AFNetworking/Serialization (2.2.3)
+  - IYLoginItem (0.1)
+  - LetsMove (1.9)
+  - SocketRocket (0.3.1-beta2)
+  - Sparkle-pornel (1.6.0)
 
 DEPENDENCIES:
-  - AFNetworking
+  - IYLoginItem
+  - LetsMove
+  - SocketRocket (from `/Users/alex/code/SocketRocket`)
+  - Sparkle-pornel
+
+EXTERNAL SOURCES:
+  SocketRocket:
+    :path: /Users/alex/code/SocketRocket
 
 SPEC CHECKSUMS:
-  AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
+  IYLoginItem: d60d379f44e968f861fa9c1a0e3591d3e637a6e5
+  LetsMove: 104879e23f804eb02d740c9883f58b848f34eff0
+  SocketRocket: 9cbe08469513356cddc0afcab1ff160bd190296a
+  Sparkle-pornel: 5d12913e9bd42a0cb24b4a6ca70c6f7e5606668a
 
 COCOAPODS: 0.32.1

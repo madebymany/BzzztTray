@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <SRWebSocket.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, SRWebSocketDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <channel>
+      <title>Bzzzt Changelog</title>
+      <link>https://raw.githubusercontent.com/madebymany/BzzztTray/master/appcast.xml</link>
+      <description>Most recent changes with links to updates.</description>
+      <language>en</language>
+         <item>
+            <title>Version 1.1</title>
+						<sparkle:releaseNotesLink>
+							https://github.com/madebymany/BzzztTray
+						</sparkle:releaseNotesLink>
+            <pubDate>Fri, 02 May 2014 :20:11 +0000</pubDate>
+            <enclosure url="https://github.com/madebymany/BzzztTray/releases/download/1.0/Bzzzt.app.zip" sparkle:version="1.1" length="1623481" type="application/octet-stream"  />
+         </item>
+   </channel>
+</rss>

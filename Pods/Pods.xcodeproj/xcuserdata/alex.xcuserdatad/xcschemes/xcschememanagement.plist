@@ -4,12 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-BzzztTray-AFNetworking.xcscheme</key>
+		<key>Pods-IYLoginItem.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BzzztTray.xcscheme</key>
+		<key>Pods-LetsMove.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Sparkle-pornel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31C5F567BC4A47BF84BE8D39</key>
+		<key>389358F009404A0391E45BFA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9443A18DB147414EA62623D6</key>
+		<key>691F4E2AC3FE40C7941B303A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7E920E2F89BD49F8A2C572AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8582D2F4DE2546BD9ACC4831</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE37DD7601734FD2BAFA3D43</key>
 		<dict>
 			<key>primary</key>
 			<true/>
