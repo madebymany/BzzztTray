@@ -41,6 +41,7 @@
     }
     
     updater = [SUUpdater sharedUpdater];
+    [updater checkForUpdates:self];
     
     _isDown = NO;
     

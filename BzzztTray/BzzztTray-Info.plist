@@ -35,6 +35,6 @@
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
 	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/madebymany/BzzztTray/master/appcast.xml</string>
+	<string>https://raw.githubusercontent.com/madebymany/BzzztTray/master/Appcast.xml</string>
 </dict>
 </plist>
