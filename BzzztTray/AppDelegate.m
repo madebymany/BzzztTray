@@ -41,13 +41,12 @@
     }
     
     updater = [SUUpdater sharedUpdater];
-    [updater checkForUpdates:self];
+    [updater checkForUpdatesInBackground];
     
     _isDown = NO;
     
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [_statusItem setTitle:BUTTON_TITLE];
-    [_statusItem setHighlightMode:YES];
     [_statusItem setEnabled:NO];
 
     [_statusItem setTarget:self];
@@ -74,22 +73,29 @@
 }
 
 -(void)toggleDoor{
-    if (_isDown) {
-        _isDown = NO;
-        [_webSocket send:@"0"];
-        [_statusItem setTitle:BUTTON_TITLE];
-    }else{
-        _isDown = YES;
-        [_webSocket send:@"1"];
-        [_statusItem setTitle:BUTTON_OPEN];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            if (_isDown) {
-                _isDown = NO;
-                [_webSocket send:@"0"];
-                [_statusItem setTitle:BUTTON_TITLE];
-            }
-        });
+    NSEvent *event = [NSApp currentEvent];
+    if([event modifierFlags] & NSControlKeyMask) {
+        exit(0);
+    } else {
+        if (_isDown) {
+            _isDown = NO;
+            [_webSocket send:@"0"];
+            [_statusItem setTitle:BUTTON_TITLE];
+        }else{
+            _isDown = YES;
+            [_webSocket send:@"1"];
+            [_statusItem setTitle:BUTTON_OPEN];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                if (_isDown) {
+                    _isDown = NO;
+                    [_webSocket send:@"0"];
+                    [_statusItem setTitle:BUTTON_TITLE];
+                }
+            });
+        }
     }
+    
+
 }
 
 // Websocket callbacks
