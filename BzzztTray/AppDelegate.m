@@ -35,14 +35,17 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+#ifndef DEBUG
     PFMoveToApplicationsFolderIfNecessary();
     if (![[NSBundle mainBundle] isLoginItem]) {
         [[NSBundle mainBundle] addToLoginItems];
     }
     
+
     updater = [SUUpdater sharedUpdater];
     [updater checkForUpdatesInBackground];
-    
+#endif
+
     _isDown = NO;
     
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
@@ -94,8 +97,6 @@
             });
         }
     }
-    
-
 }
 
 // Websocket callbacks
@@ -124,6 +125,10 @@
     NSData* data = [message dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     
+    if (dict[@"connections"]) {
+        [self updateTooltipWithData:dict];
+    }
+    
     if ([dict[@"id"] isEqualToString:NSUserName()]) {
         // It's me!
     } else {
@@ -135,6 +140,19 @@
             [_statusItem setTitle:BUTTON_TITLE];
         }
     }
+}
+
+-(void)updateTooltipWithData:(NSDictionary*)dict
+{
+    NSMutableString *tooltip = [NSMutableString string];
+    [dict[@"connections"] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [tooltip appendFormat:@"%@", obj];
+        if (idx != ([dict[@"connections"] count] - 1)) {
+             [tooltip appendString:@"\n"];
+        }
+    }];
+    
+    _statusItem.toolTip = tooltip;
 }
 
 -(void)recconnectAfterDelay
