@@ -2,22 +2,18 @@ PODS:
   - IYLoginItem (0.1)
   - LetsMove (1.9)
   - SocketRocket (0.3.1-beta2)
-  - Sparkle-pornel (1.6.0)
+  - Sparkle (1.8.0)
 
 DEPENDENCIES:
   - IYLoginItem
   - LetsMove
-  - SocketRocket (from `/Users/alex/code/SocketRocket`)
-  - Sparkle-pornel
-
-EXTERNAL SOURCES:
-  SocketRocket:
-    :path: /Users/alex/code/SocketRocket
+  - SocketRocket
+  - Sparkle
 
 SPEC CHECKSUMS:
-  IYLoginItem: d60d379f44e968f861fa9c1a0e3591d3e637a6e5
-  LetsMove: 104879e23f804eb02d740c9883f58b848f34eff0
-  SocketRocket: 9cbe08469513356cddc0afcab1ff160bd190296a
-  Sparkle-pornel: 5d12913e9bd42a0cb24b4a6ca70c6f7e5606668a
+  IYLoginItem: dbdbc4636da5087b200f68456aa4367a1af35c1d
+  LetsMove: 9554c194d1378c89909fd66005cf7a662f43932d
+  SocketRocket: 79a68ae186063c65e1fe6f638b1ae2927aa5f304
+  Sparkle: 5eb20bb37ca21e471dab8417dee880198d905327
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.34.4

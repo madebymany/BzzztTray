@@ -67,7 +67,7 @@
     _webSocket = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:API_URL(NSUserName())]];
     _webSocket.delegate = self;
     [_webSocket open];
-    [_webSocket monitorReachabilityWithInterval:PING_INTERVAL];
+//    [_webSocket monitorReachabilityWithInterval:PING_INTERVAL];
 }
 
 -(void)didClickStatusBar:(id)sender
@@ -132,7 +132,7 @@
     if ([dict[@"id"] isEqualToString:NSUserName()]) {
         // It's me!
     } else {
-        if ((BOOL)dict[@"is_unlocked"]) {
+        if ([dict[@"is_unlocked"] boolValue]) {
             [_statusItem setEnabled:NO];
             [_statusItem setTitle:dict[@"id"]];
         } else {

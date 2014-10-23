@@ -19,7 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Sparkle-pornel.xcscheme</key>
+		<key>Pods-Sparkle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>389358F009404A0391E45BFA</key>
+		<key>18DCFDC055C91C6EE925A9D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>691F4E2AC3FE40C7941B303A</key>
+		<key>50878283A0AC2547845F7A5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E920E2F89BD49F8A2C572AA</key>
+		<key>A46C58BF7A347BE080CD50BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8582D2F4DE2546BD9ACC4831</key>
+		<key>B403402C5474569F3896E100</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE37DD7601734FD2BAFA3D43</key>
+		<key>CD1AAA8300FC5FE955D51007</key>
 		<dict>
 			<key>primary</key>
 			<true/>
