@@ -9,7 +9,7 @@
             <title>Version 1.4</title>
 						<description>Fix for OSX Yosemite</description>
             <pubDate>Tue, 23 Oct 2014 01:20:11 +0000</pubDate>
-            <enclosure url="https://github.com/madebymany/BzzztTray/releases/download/1.4/Bzzzt.app.zip" sparkle:version="1.3" length="1204167" type="application/octet-stream" sparkle:dsaSignature="MCwCFHzRoTn7WI5jxwsA7OZiYEPHW/EEAhQiyfufdeP92csnq1hKrobJabwq7w==" />
+            <enclosure url="https://github.com/madebymany/BzzztTray/releases/download/1.4/Bzzzt.app.zip" sparkle:version="1.3" length="1204167" type="application/octet-stream" sparkle:dsaSignature="MCwCFDo2pXtMrlxDw5ZYUaqXIjSyWY4UAhR/I0IGeXOMUGq5Ik3SCkvcFNrT3Q==" />
          </item>
          <item>
             <title>Version 1.3</title>
