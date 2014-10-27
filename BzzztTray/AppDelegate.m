@@ -35,16 +35,16 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-#ifndef DEBUG
+//#ifndef DEBUG
     PFMoveToApplicationsFolderIfNecessary();
     if (![[NSBundle mainBundle] isLoginItem]) {
         [[NSBundle mainBundle] addToLoginItems];
     }
-    
+//#endif
 
     updater = [SUUpdater sharedUpdater];
     [updater checkForUpdatesInBackground];
-#endif
+
 
     _isDown = NO;
     
